@@ -1,0 +1,393 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: lateef, serif;
+
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+.bar {
+    background-color: rgb(222, 195, 144);
+    color: white;
+    padding: 10px;
+
+    top: 0;
+    overflow: hidden;
+}
+
+.bar ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+    list-style-type: none;
+
+}
+a#current {
+    color: rgb(140, 44, 3);
+    
+}
+
+.bar a {
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+    font-weight: 500;
+
+}
+
+.bar a:hover
+ {
+    color:rgba(140, 44, 3, 0.5);
+    transition: 0.5s;
+}
+
+section.welcome,.welcome2,.welcome3,.welcome4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+
+.welcome{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(kepek/cedar.jpg);
+    background-position:top;
+}
+.welcome2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(kepek/bey2.jpg);
+    background-position: bottom;
+}
+.welcome3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(kepek/olive.jpg);
+    background-position: center;
+}
+.welcome4{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(kepek/flag3.jpg);
+    background-position: center;
+}
+
+h1.first {
+    font-weight: 700;
+    font-size: 2cm;
+    
+    background-color: rgba(140, 44, 3, 0.5);
+    border-radius: 10px;
+    padding: 18px;
+    margin: 20px;
+
+}
+
+.welcome p, .welcome2 p,.welcome3 p,.welcome4 p{
+    font-weight: 500;
+    font-size: 1cm;
+    color: rgb(255, 255, 255);
+    margin: 20px;
+
+}
+
+.welcome a,.welcome2 a,.welcome3 a,.welcome4 a{
+    background-color: rgb(67, 15, 0);
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 9px;
+    font-weight: 500;
+    font-size: 1cm;
+    margin: 20px;
+
+}
+
+.welcome a:hover {
+
+    box-shadow: 0 0 28px rgba(0, 0, 0, 0.5);
+
+    transition: 0.2s;
+}
+
+.begin {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.begin h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.begin p {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.bracks {
+    display: flex;
+    flex-direction: column;
+    background: rgba(140, 99, 3, 0.5);
+    height: fit-content;
+    flex-wrap: wrap;
+    
+}
+
+.brack {
+    flex: 1 1 100%;
+    padding: 10px;
+    border: solid rgb(0, 0, 0) 2px;
+    border-radius: 10px;
+    margin: 10px;
+    background: white;
+    
+}
+
+
+.brack h3 {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: -10px;
+    background-color: rgba(140, 99, 3, 0.5);
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.brack h5 {
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    padding: 8px;
+}
+
+.brack p {
+    font-size: 28px;
+    font-weight: 400;
+    padding: 12px;
+}
+.brack aside img{
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 0.4cm;
+    font-weight: 200;
+    background-color: rgb(222, 195, 144);
+}
+footer p{
+    padding: 2px;
+    font-size: 16px;
+}
+.rights{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.beirut,
+.baalbek,
+.byb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.beirut aside,
+.baalbek aside,
+.byb aside {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.beirut article,
+.baalbek article,
+.byb article {
+    color: black;
+}
+
+.beirut article h1,
+.baalbek article h1,
+.byb article h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: rgba(140, 99, 3, 0.5);
+}
+
+.beirut article p,
+.baalbek article p,
+.byb article p {
+    line-height: 1.5;
+    font-size: 24px;
+}
+
+.beirut aside img,
+.baalbek aside img,
+.byb aside img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+.food{
+    font-size: 28px;
+    line-height: 16px;
+}
+.both,.recom, .forms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    background-color: rgb(222, 195, 144);
+    border-radius: 8px;
+    
+
+}
+.recom{
+    font-size: 24px;
+}
+.both{
+    width: 100%;
+}
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color:white;
+    cursor: pointer;
+}
+input{
+    width: 100%;
+    padding: 12px;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 4px;
+
+}
+
+@media (min-width:600px) {
+    .bar{
+        position: sticky;
+    }
+    .bar ul {
+        flex-direction: row;
+    }
+
+    .bracks {
+        flex-direction: row;
+        height: fit-content;
+    }
+
+    .beirut,
+    .baalbek,
+    .byb {
+        flex-direction: column;
+    }
+
+    .beirut article,
+    .baalbek article,
+    .byb article {
+        flex: 1;
+    }
+
+    .beirut aside,
+    .baalbek aside,
+    .byb aside {
+        flex: 1;
+    }
+}
+
+@media(min-width:768px) {
+    .bar {
+        position: sticky;
+    }
+
+    .bar ul {
+        flex-direction: row;
+    }
+
+    .bracks {
+        flex-direction: row;
+        height: fit-content;
+        
+    }
+    .brack{
+        flex-basis: 33%;
+    }
+
+    .beirut {
+        gap: 30px;
+        padding: 30px;
+        flex-direction: row;
+
+    }
+
+    .baalbek {
+        gap: 30px;
+        padding: 30px;
+        flex-direction: row;
+
+    }
+
+    .byb {
+        gap: 30px;
+        padding: 30px;
+        flex-direction: row-reverse;
+    }
+
+    .beirut article,
+    .baalbek article,
+    .byb article {
+        flex: 2;
+    }
+
+    .beirut aside,
+    .baalbek aside,
+    .byb aside {
+        flex: 1;
+    }
+    .food article p{
+       
+       font-size: 28px;
+    }
+    .food article{
+        flex: 2;
+    }
+    .food aside{
+        flex: .5;
+    }
+    .food{
+        gap: 10%;
+    }
+    .both{
+        flex-direction: row;
+    }
+    .forms{
+        flex:1;
+    }
+    .recom{
+        flex:1;
+    }
+}

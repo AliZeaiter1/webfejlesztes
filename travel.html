@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lebanese journey</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lateef:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="kepek/icon/favicon.ico" type="image/x-icon">
+    <script src="jquery/jquery-3.7.1.js"></script>
+    <script src="jquery/jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#myform").validate({
+                rules: {
+                   firstname:"required",
+                    lastname:"required",
+                    email:{
+                        required:true,
+                        email:true
+                    },
+                    tel:"required",
+                    travel_alone:"required",
+                    date:"required",
+                    },   
+        
+                messages:{
+                    firstname:"Enter your first name",
+                    lastname:"Enter your last name",
+                    email:"Please enter a valid email adress",
+                    tel:"Please enter your phone number",
+                    travel_alone:"Choose an answer",
+                    date:"Pick a date"
+                },
+            });
+        });
+    </script>
+<style>label.error{
+    color: rgb(140,44,3);
+}
+</style>
+</head>
+
+<body>
+    <nav class="bar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sites.html">Sights</a></li>
+            <li><a href="cuisine.html">Cuisine</a></li>
+            <li><a href="#" id="current">Travel</a></li>
+        </ul>
+    </nav>
+    <section class="welcome4">
+        <h1 class="first">Travel</h1>
+
+    </section>
+<section class="both">
+    <section class="recom">
+        <form id="dish">
+        <h1>Dish Recommendation</h1>
+        <p>Fill out the form for some results!</p>
+        <div>
+            <p>Do you like meat?</p>
+            <input type="radio" name="likemeat" id="myes" value="yes">
+            <label for="myes">Yes</label>
+            <input type="radio" name="likemeat" id="mno" value="no">
+            <label for="mno">No</label>
+        </div>
+        <div>
+            <p>Do you like somethin light?</p>
+            <input type="radio" name="likelight" id="lyes" value="yes">
+            <label for="lyes">Yes</label>
+            <input type="radio" name="likelight" id="lno" value="no">
+            <label for="lno">No</label>
+        </div>
+        </form>
+        <button onclick="dish()">Recommend</button>
+        <p>Result: <input type="text" id="res"></p>
+    
+    </section>
+
+    <section class="forms">
+        <div class="form">
+            <form method="post" action="https://rf.uni-corvinus.hu/webfejlesztes/receive.php" id="myform" novalidate>
+                <h2>Contact Us For More Information</h2>
+                <p><label for="firstname">First Name</label></p>
+                <input type="text" name="firstname" id="firstname">
+                <p><label for="lastname">Last Name</label></p>
+                <input type="text" name="lastname" id="lastname">
+                <p><label for="email">Email adress</label></p>
+                <input type="email" name="email" id="email">
+                <p><label for="Phone">Phone Number</label></p>
+                <input type="tel" name="tel" id="Phone">
+                <p>Are you planning to travel alone?</p>
+                <input type="radio" name="travel_alone" id="alone" value="alone">
+                <label for="alone">Yes</label><br>
+                <input type="radio" name="travel_alone" id="not_alone" value="not_alone">
+                <label for="not_alone">No</label>
+                <p><label for="date">When are you planning to travel?</label></p>
+                <input type="date" name="date" id="date">
+                <p><input type="submit" name="submit" value="Submit">
+                <input type="reset" name="reset" value="Reset"></p>
+            </form>
+        </div>
+
+    </section>
+</section>
+<hr>
+    <footer>
+        <div class="contact">
+            <p>Contact us</p>
+            <p>
+                Email: info@lebanesejourney.com <br>
+                Phone: +3690xxxxxxx
+            </p>
+        </div>
+        <hr>
+        <div class="rights">
+            <p>This is NOT a real Website. Please turn to your country's travel advisory before you travel.</p>
+            <p>
+                ©2024 Ali Zeaiter,All Rights Reserved
+            </p>
+        </div>
+
+    </footer>
+<script src="recom.js"></script>
+</body>
+
+</html>
