@@ -2,7 +2,7 @@
 Webfejlesztés tárgy beadandó
 Zeaiter Ali
 
-
+https://github.com/AliZeaiter1/webfejlesztes.git
 
 Egy turistáknak tervezett weblap. Bemutatja Libanon legszebb látványosságait és egyedi ételeit.
 
